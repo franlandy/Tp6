@@ -1,0 +1,30 @@
+#padre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#hijo {
+    width: 200px;
+    height: 100px;
+    justify-content: space-between;
+    border: 3px solid #000;
+    background-color: #a4d342;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin: 0px 50px;
+    animation: cambio-color 1s infinite alternate;
+}
+
+@keyframes cambio-color {
+    0% {
+        transform: translate(0) translatey(0);
+        background-color: #a4d342;
+    }
+
+    100% {
+        transform: translateX(0) translateY(100%);
+        background-color: aqua;
+    }
+}

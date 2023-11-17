@@ -1,0 +1,51 @@
+#padre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div {
+    width: 200px;
+    height: 100px;
+    justify-content: space-between;
+    border: 3px solid #000;
+    background-color: #a4d342;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin: 0px 50px;
+
+}
+
+.hijo1 {
+    animation: cambio-color2 .6s ease-in-out alternate .1s infinite;
+}
+
+.hijo2 {
+    animation: cambio-color2 .6s ease-in-out alternate .3s infinite;
+}
+
+.hijo3 {
+    animation: cambio-color2 .6s ease-in-out alternate .5s infinite;
+
+}
+
+.hijo4 {
+    animation: cambio-color2 .6s ease-in-out alternate .7s infinite;
+}
+
+.hijo5 {
+    animation: cambio-color2 .6s ease-in-out alternate .9s infinite;
+}
+
+@keyframes cambio-color2 {
+    0% {
+        transform: translate(0) translatey(0);
+        background-color: #a4d342;
+    }
+
+    100% {
+        transform: translateX(0) translateY(100%);
+        background-color: aqua;
+    }
+}
